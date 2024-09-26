@@ -1,16 +1,10 @@
-import gatin from "../assets/img";
+import gatin from "../assets/img/gatin.jpg";
 import PropTypes from "prop-types";
 
-export const Gatin = ( props ) => {
-  return (
-   
-<img src={gatin} alt="Imagen Gato Naranja"  className={props}/>
+export const Gatin = ({ className }) => {
+  return <img src={gatin} alt="Imagen Gato Naranja" className={className} />;
+};
 
-  )
-}
-
-Gatin.protoTypes = { 
-
-    className: PropTypes.string
-
-}
+Gatin.propTypes = {
+  className: PropTypes.string,
+};
