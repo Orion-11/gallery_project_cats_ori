@@ -1,24 +1,26 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
-import { Llano } from "./components/Llano";
+
+import { Razas } from "./components/Razas";
 import { Gatin } from "./components/Gatin";
 import { Gatin2 } from "./components/Gatin2";
 import { Gatin3 } from "./components/Gatin3";
 import { Gatin4 } from "./components/Gatin4";
 import { Navigation } from "./components/Navigation";
+import "./App.css";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <div>
-          <h1 className="text-center my-3">Gallery Project</h1>
+          <h1 className="text-center my-3">Cats Gallery Project</h1>
+          
         </div>
         <div className="container d-flex justify-content-center">
           <Routes>
             <Route
-              path="/Llano"
-              element={<Llano className="main-img-container" />}
+              path="/Razas"
+              element={<Razas className="main-img-container" />}
             />
             <Route
               path="/Gatin"
